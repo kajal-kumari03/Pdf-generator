@@ -1,8 +1,8 @@
 import express from 'express'
 import { config } from 'dotenv'
-import connectToDB from './config/db.js';
-import userRouter from './routes/userRoutes.js';
- import bookrouter from './routes/bookRoutes.js';
+import connectToDB from './src/config/db.js';
+import userRouter from './src/routes/userRoutes.js';
+ import bookrouter from './src/routes/bookRoutes.js';
 config();
 const port = process.env.PORT || 8000;
 const dburl=process.env.DB_URL || null;
